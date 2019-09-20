@@ -14,25 +14,10 @@ import '@/assets/svg-icons'
 import filters from './filters'
 
 import {
-  Button,
-  Divider,
-  Loading,
-  Icon,
-  Checkbox,
-  Row, Col,
-  Field,
-  NavBar,
-  CellGroup,
-  Toast,
-  Dialog,
-  ActionSheet,
-  RadioGroup, Radio,
-  Cell
+  Collapse, CollapseItem, Toast, Skeleton
 } from 'vant'
 
-Vue.use(Loading).use(Icon).use(Divider).use(Button).use(Checkbox)
-  .use(Row).use(Col).use(Field).use(NavBar).use(CellGroup).use(Cell)
-  .use(Toast).use(Dialog).use(ActionSheet).use(RadioGroup).use(Radio)
+Vue.use(Collapse).use(CollapseItem).use(Toast).use(Skeleton)
 
 FastClick.attach(document.body)
 Vue.config.productionTip = false

@@ -6,8 +6,7 @@
 <script>
 export default {
   components: {
-    authTag: () => import('./components/proto_auth.vue'),
-    buyTag: () => import('./components/proto_buy.vue')
+    authTag: () => import('./components/proto_auth.vue')
   },
   data () {
     return {

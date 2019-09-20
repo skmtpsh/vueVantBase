@@ -23,14 +23,6 @@ export const getAppKey = (appId) => {
     {
       id: 'qiandada87654321',
       key: '12d3f103ba163557f49174c367c0fa20'
-    },
-    {
-      id: 'diandianhua12345',
-      key: 'fadc64c1a6b5ef0734ea23cb530d92be'
-    },
-    {
-      id: 'huixincaifu12345',
-      key: '123456789'
     }
   ]
   return AppSet.filter(item => {
@@ -72,15 +64,7 @@ const requestQuery = (ver) => {
   const version = ver.toLowerCase()
   let URL = location.search
   const urlQuery = ({
-    token = '',
-    type = '',
-    productType = '',
-    platform = '',
-    mobile = '',
-    userId = '',
-    appName = '',
-    productName = '',
-    loginPhone = ''
+    token = ''
   } = utils.qs.parse(URL.indexOf('?') !== -1 ? URL.substr(1) : '')) => {
     return Object.assign({ token },
       version === defalutVersion ? {} : {},

@@ -1,16 +1,24 @@
 <template>
   <keep-alive>
-    <component :is="currentComp"></component>
+    <van-skeleton
+      title
+      title-width="100%"
+      :row="6"
+      :loading="loading"
+    >
+      <component :is="currentComp"></component>
+    </van-skeleton>
   </keep-alive>
 </template>
 <script>
 export default {
   components: {
-    serverTag: () => import('./components/doc_server.vue')
+    ylbserverTag: () => import('./components/doc_ylb_server.vue')
   },
   data () {
     return {
-      currentComp: 'serverTag'
+      loading: true,
+      currentComp: ''
     }
   },
   created () {
@@ -20,8 +28,9 @@ export default {
       message: '加载中...'
     })
     setTimeout(() => {
-      let loadTag = `${this.$route.query.doc}Tag`
+      let loadTag = `${this.$route.query.dt}Tag`
       this.currentComp = loadTag
+      this.loading = false
       this.$toast.clear()
     }, 300)
   }

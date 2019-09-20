@@ -45,9 +45,17 @@ img {
 }
 .docPage {
   padding: 15px;
-  color: #333;
-  line-height: 1.8;
   font-size: 14px;
+  p {
+    color: #969799 !important;
+    line-height: 1.6;
+    text-indent: 2em;
+    margin-bottom: 10px;
+  }
+  &.mglr0 {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 .protoPage {
   padding: 15px;
