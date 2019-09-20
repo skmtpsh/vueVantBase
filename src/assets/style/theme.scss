@@ -1,0 +1,9 @@
+.sh-container-full {
+  // @extend %full;
+  .sh-container-full__body {
+    padding: 15px;
+  }
+}
+#nprogress .bar {
+  background: #FE5A3F !important; //自定义颜色
+}

@@ -1,0 +1,50 @@
+@import '~@/assets/style/unit/color.scss';
+
+// 工具类名统一前缀
+$prefix: sh;
+
+// 禁止用户选中 鼠标变为手形 @extend %full;
+%unable-select {
+  user-select: none;
+  cursor: pointer;
+}
+
+%full {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+%flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+%flexLeft{
+  display: flex;
+  align-items: center;
+}
+%flexBetwen{
+  display: flex;
+  justify-content: space-between;
+}
+@mixin sizeColor($size, $color, $type) {
+  font-size: $size;
+  color: $color;
+  font-style: $type;
+}
+@mixin wh ($width, $height) {
+  width: $width;
+  height: $height;
+}
+@mixin fz_center {
+  text-align: center;
+}
+@mixin fz_right {
+  text-align: right;
+}
+@mixin fz_left {
+  text-align: left;
+}
+

@@ -1,0 +1,63 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-overflow-scrolling: touch;
+  touch-action: pan-y;
+}
+
+html {
+  -webkit-tap-highlight-color: transparent;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%
+}
+
+body {
+  -webkit-touch-callout: none;
+  /* 当你触摸并按住触摸目标时候，禁止或显示系统默认菜单 */
+  -webkit-user-select: none;
+  /* webkit浏览器*/
+  -moz-user-select: none;
+  /* 火狐*/
+  -ms-user-select: none;
+  /* IE10 */
+  user-select: none;
+  font-family: 'PingFangSC-Regular', 'PingFangSC', 'HeitiSC', 'Helvetica', 'Microsoft Yahei', 'DroidSans', sans-serif;
+  position: relative;
+  #app {
+    @extend %full;
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+.docPage {
+  padding: 15px;
+  color: #333;
+  line-height: 1.8;
+  font-size: 14px;
+}
+.protoPage {
+  padding: 15px;
+  color: #333;
+  line-height: 1.8;
+  font-size: 14px;
+  text-indent: 2em;
+  h2, h3, h4, h5 {
+    margin: 30px 0
+  }
+}
+
+@import '~@/assets/style/theme.scss';
